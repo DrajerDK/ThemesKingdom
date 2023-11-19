@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 80px;
+    padding-right: 80px;
+    .logo {
+        display: flex;
+        align-items: center;
+        .logo__text {
+            color: white;
+            font-size: 22px;
+            font-family: 'HK Guise', Helvetica, sans-serif;
+            font-weight: 400;
+            margin-right: 11px;
+            display: flex;
+            align-items: center;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .logo__image {
+            width: 26px;
+            height: 18px;
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+    }
+    .menu-top {
+        display: flex;
+        align-items: center;
+        width: 436px;
+        justify-content: space-between;
+        .menu-top__button {
+            color: white;
+            font-family: 'HK Guise', Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            text-decoration: none;
+            text-align: center;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .login-block {
+        display: flex;
+        width: 255px;
+        justify-content: space-between;
+        .login-block__sign-in-button {
+            color: white;
+            font-family: 'HK Guise', Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .login-block__get-started-button {
+            color: #000;
+            font-family: 'HK Guise', Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 20   px;
+            text-decoration: none;
+            background-color: white;
+            padding: 16px 30px;
+            display: flex;
+            border: 2px solid white;
+            border-radius: 3em;
+            &:hover {
+                color: white;
+                background-color: transparent;
+            }   
+        }
+    }
+}

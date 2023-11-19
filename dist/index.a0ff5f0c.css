@@ -1,0 +1,93 @@
+.container {
+  justify-content: space-between;
+  padding: 22px 80px;
+  display: flex;
+}
+
+.container .logo {
+  align-items: center;
+  display: flex;
+}
+
+.container .logo .logo__text {
+  color: #fff;
+  align-items: center;
+  margin-right: 11px;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  display: flex;
+}
+
+.container .logo .logo__text:hover {
+  cursor: pointer;
+}
+
+.container .logo .logo__image {
+  width: 26px;
+  height: 18px;
+}
+
+.container .logo .logo__image:hover {
+  cursor: pointer;
+}
+
+.container .menu-top {
+  justify-content: space-between;
+  align-items: center;
+  width: 436px;
+  display: flex;
+}
+
+.container .menu-top .menu-top__button {
+  color: #fff;
+  text-align: center;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container .menu-top .menu-top__button:hover {
+  text-decoration: underline;
+}
+
+.container .login-block {
+  justify-content: space-between;
+  width: 255px;
+  display: flex;
+}
+
+.container .login-block .login-block__sign-in-button {
+  color: #fff;
+  align-items: center;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+}
+
+.container .login-block .login-block__sign-in-button:hover {
+  text-decoration: underline;
+}
+
+.container .login-block .login-block__get-started-button {
+  color: #000;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20 px;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  padding: 16px 30px;
+  text-decoration: none;
+  display: flex;
+}
+
+.container .login-block .login-block__get-started-button:hover {
+  color: #fff;
+  background-color: #0000;
+}
+
+/*# sourceMappingURL=index.a0ff5f0c.css.map */
