@@ -3,6 +3,7 @@
     padding-right: 80px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     .banner-text {
         display: flex;
         flex-direction: column;
@@ -40,6 +41,20 @@
             }
         }
     }   
+    .container-banner__video {
+        // max-width: 100%;
+        // transform: translate(-50%, -50%);
+        // transition: transform 0.3s ease-in-out;
+        // width: 100%;
+        // display: flex;
+        // justify-content: center;
+        margin: 0 auto;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // transition: transform 1s ease-in-out;
+        // position: relative;
+    }
 }
 
 
