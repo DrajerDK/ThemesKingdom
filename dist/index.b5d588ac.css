@@ -1,0 +1,92 @@
+.container-design {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.container-design .text-block {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1460px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container-design .text-block .text-block__title {
+  color: #fff;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(9.08px + 5.62vw);
+  font-weight: 500;
+}
+
+.container-design .text-block .design-text-list {
+  justify-content: space-between;
+  margin-top: 6vw;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.container-design .text-block .design-text-list .subcrition-block .subcrition-block__title {
+  color: #fff6;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.container-design .text-block .design-text-list .subcrition-block .subcrition-list {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.container-design .text-block .design-text-list .subcrition-block .subcrition-list .subcrition-list__element {
+  color: #fff;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.container-design .text-block .design-text-list .subcrition-block .subcrition-list .subcrition-list__element:hover {
+  color: #fff6;
+  cursor: pointer;
+}
+
+.container-design .text-block .design-text-list .category-block {
+  flex-direction: column;
+  max-width: 1460px;
+  margin-left: 50px;
+  display: flex;
+}
+
+.container-design .text-block .design-text-list .category-block .category-block__title {
+  color: #fff6;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.container-design .text-block .design-text-list .category-block .categoty-box {
+  justify-content: space-between;
+  gap: 2.5em;
+  margin-top: 20px;
+  display: flex;
+}
+
+.container-design .text-block .design-text-list .category-block .categoty-box .category-list {
+  list-style-type: none;
+}
+
+.container-design .text-block .design-text-list .category-block .categoty-box .category-list .category-list__element {
+  color: #fff;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.container-design .text-block .design-text-list .category-block .categoty-box .category-list .category-list__element:hover {
+  color: #fff6;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.b5d588ac.css.map */

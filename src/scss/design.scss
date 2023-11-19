@@ -1,0 +1,81 @@
+.container-design {
+    max-width: 95%;
+    margin: 0 auto;
+    .text-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 1460px;
+        margin: 0 auto;
+
+        .text-block__title {
+            color: white;
+            font-family: 'HK Guise', Helvetica, sans-serif;
+            font-size: calc(9.08px + 5.62vw);
+            font-weight: 500;
+        }
+        .design-text-list {
+            display: flex;
+            margin-top: 6vw;
+            margin-bottom: 30px;
+            justify-content: space-between;
+            .subcrition-block {
+                .subcrition-block__title {
+                    color: rgba(255,255,255,.4);
+                    font-family: 'HK Guise', Helvetica, sans-serif;
+                    font-weight: 500;
+                    font-size: .9rem;
+                }
+                .subcrition-list {
+                    list-style-type: none;
+                    margin-top: 20px;
+
+                    .subcrition-list__element {
+                        color: white;
+                        font-size: .9rem;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        font-weight: 500;
+                        line-height: 1.6;
+                        &:hover {
+                            color: rgba(255,255,255,.4);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .category-block {
+                display: flex;
+                flex-direction: column;
+                max-width: 1460px;
+                margin-left: 50px;
+                .category-block__title {
+                    color: rgba(255,255,255,.4);
+                    font-family: 'HK Guise', Helvetica, sans-serif;
+                    font-weight: 500;
+                    font-size: .9rem;
+                }
+                .categoty-box {
+                    display: flex;
+                    margin-top: 20px;
+                    justify-content: space-between;
+                    gap: 2.5em;
+                    .category-list {
+                    list-style-type: none;                        
+                        .category-list__element {
+                            color: white;
+                            font-size: .9rem;
+                            font-family: 'HK Guise', Helvetica, sans-serif;
+                            font-weight: 500;
+                            line-height: 1.6;
+                            &:hover {
+                                color: rgba(255,255,255,.4);
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
