@@ -1,0 +1,160 @@
+.container-presentation {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.container-presentation .presentation-block {
+  width: 100%;
+}
+
+.container-presentation .presentation-block .presentation-block__title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.647px + 14.706vw);
+  font-weight: 500;
+}
+
+.container-presentation .presentation-block .presentation-content {
+  justify-content: space-between;
+  display: flex;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  display: flex;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-list {
+  list-style: none;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-list .presentation-list__element {
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(14.39px + .8vw);
+  font-weight: 500;
+  line-height: 1.6;
+  display: flex;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-list .presentation-list__element .element__mark {
+  height: 5vh;
+  margin-right: .4em;
+  position: relative;
+  top: 3px;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-button-block {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-button-block .presentation-button-block__button {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  padding: 1.4em 3.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(15px + .258vw);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-button-block .presentation-button-block__button:hover {
+  color: #fff;
+  background-color: #0000;
+  animation: 2.2s infinite forwards shadow;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-button-block .presentation-button-block__try-button {
+  color: #fff;
+  background-color: #0000;
+  margin-left: 2vw;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-text .presentation-button-block .presentation-button-block__try-button:hover {
+  opacity: .3;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-multimedia {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 50%;
+  display: flex;
+}
+
+.container-presentation .presentation-block .presentation-content .presentation-multimedia .presentation-multimedia__video {
+  width: 88%;
+  max-width: 100%;
+}
+
+.container-presentation .presentation-block_padding-top {
+  padding-top: 14vw;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-block__title_right {
+  justify-content: flex-end;
+  display: flex;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block {
+  justify-content: flex-end;
+  width: 45%;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block .presentation-text__description {
+  color: #fff;
+  opacity: .5;
+  text-align: start;
+  margin-bottom: 2.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.09px + .7767vw);
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block .presentation-button-block-features {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block .presentation-button-block-features .button-switch-block {
+  justify-content: space-between;
+  width: 30%;
+  display: flex;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block .presentation-button-block-features .button-switch-block .button-switch-block__button {
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(24.8px + 2.46vw);
+  font-weight: 500;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block .presentation-button-block-features .button-switch-block .button-switch-block__button:hover {
+  opacity: 1;
+}
+
+.container-presentation .presentation-block_padding-top .presentation-content .presentation-text-features-block .presentation-button-block-features .button-switch-block .button-switch-block__button_opacity {
+  opacity: .5;
+}
+
+/*# sourceMappingURL=index.211b6203.css.map */

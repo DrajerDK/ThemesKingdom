@@ -9,6 +9,7 @@
 .container-banner .banner-text {
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
   display: flex;
 }
 
@@ -51,20 +52,6 @@
 
 .container-banner .container-banner__video {
   margin: 0 auto;
-}
-
-@keyframes shadow {
-  0% {
-    box-shadow: inset 0 0 #fff, 0 0 #fff;
-  }
-
-  50% {
-    box-shadow: inset 0 0 24px #fff, 0 0 24px #fff;
-  }
-
-  100% {
-    box-shadow: inset 0 0 #fff, 0 0 #fff;
-  }
 }
 
 /*# sourceMappingURL=index.e6f89118.css.map */

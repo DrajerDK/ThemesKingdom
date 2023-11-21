@@ -1,0 +1,162 @@
+@import "mixins";
+@import "variables";
+.container-presentation {
+    padding-top: 70px;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .presentation-block {
+        width: 100%;
+        .presentation-block__title {
+            // color: white;
+            // font-family: 'HK Guise', Helvetica, sans-serif;
+            // font-weight: 500;
+            // font-size: calc(17.647px + 14.706vw);
+            @include presintation-title-style;
+            margin-bottom: 20px;
+            // .presentation-block__title__badge {
+            // }
+        }
+        .presentation-content {
+            // margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            .presentation-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 40%;
+                .presentation-list {
+                    list-style: none;
+                    .presentation-list__element {
+                        color: white;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        line-height: 1.6;
+                        font-weight: 500;
+                        font-size: calc(14.39px + 0.8vw);
+                        display: flex;
+                        width: 100%;
+                        cursor: pointer;
+                        .element__mark {
+                            height: 5vh;
+                            margin-right: 0.4em;
+                            position: relative;
+                            top: 3px;
+                        }
+                    }
+                }
+                .presentation-button-block {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .presentation-button-block__button {
+                        color: #000;
+                        background-color: white;
+                        border: 2px solid white;
+                        padding: 1.4em 3.2em;
+                        border-radius: 3em;
+                        text-decoration: none;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: calc(15px + 0.258vw);
+                        &:hover {
+                            background-color: transparent;
+                            color: white;
+                            animation: shadow 2.2s infinite forwards;
+    
+                        }
+                    }
+                    .presentation-button-block__try-button {
+                        font-size: .9rem;
+                        color: white;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        font-weight: 500;
+                        text-decoration: none;
+                        margin-left: 2vw;
+                        background-color: transparent;
+                        &:hover {
+                            opacity: 0.3;
+                        }
+                    }
+
+                }
+            }
+            .presentation-multimedia {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                .presentation-multimedia__video {
+                    max-width: 100%;
+                    width: 88%;
+                }
+            }
+        }
+    }
+
+
+
+
+    .presentation-block_padding-top {
+        padding-top: 14vw;
+        .presentation-block__title_right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .presentation-content {
+            .presentation-multimedia {
+                .presentation-multimedia__video {
+
+                }
+            }
+            .presentation-text-features-block {
+                justify-content: flex-end;
+                width: 45%;
+                .presentation-text__description {
+                    font-size: calc(17.09px + 0.7767vw);
+                    font-family: $main-font-family;
+                    color: $main-font-color;
+                    margin-bottom: 2.2em;
+                    opacity: 0.5;
+                    text-align: start;
+                }
+                .presentation-button-block-features{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .button-switch-block {
+                        width: 30%;
+                        display: flex;
+                        justify-content: space-between;
+                        .button-switch-block__button {
+                            color: $main-font-color;
+                            border: none;
+                            font-weight: 500;
+                            font-family: $main-font-family;
+                            font-size: calc(24.8px + 2.46vw);
+                            cursor: pointer;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                        .button-switch-block__button_opacity {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // .presentation-text__description {
+    //     font-size: calc(17.09px + 0.7767vw);
+    //     font-family: $main-font-family;
+    //     color: white;
+    // }
+}
+
+

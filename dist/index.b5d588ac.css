@@ -1,12 +1,17 @@
 .container-design {
   max-width: 95%;
   margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
 }
 
 .container-design .text-block {
+  background-color: #0000;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 1460px;
   margin: 0 auto;
   display: flex;
@@ -14,32 +19,43 @@
 
 .container-design .text-block .text-block__title {
   color: #fff;
+  background-color: #0000;
+  flex-direction: row;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: calc(9.08px + 5.62vw);
   font-weight: 500;
+  display: flex;
 }
 
 .container-design .text-block .design-text-list {
+  background-color: #0000;
   justify-content: space-between;
   margin-top: 6vw;
   margin-bottom: 30px;
   display: flex;
 }
 
+.container-design .text-block .design-text-list .subcrition-block {
+  background-color: #0000;
+}
+
 .container-design .text-block .design-text-list .subcrition-block .subcrition-block__title {
   color: #fff6;
+  background-color: #0000;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: 500;
 }
 
 .container-design .text-block .design-text-list .subcrition-block .subcrition-list {
+  background-color: #0000;
   margin-top: 20px;
   list-style-type: none;
 }
 
 .container-design .text-block .design-text-list .subcrition-block .subcrition-list .subcrition-list__element {
   color: #fff;
+  background-color: #0000;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: 500;
@@ -52,6 +68,7 @@
 }
 
 .container-design .text-block .design-text-list .category-block {
+  background-color: #0000;
   flex-direction: column;
   max-width: 1460px;
   margin-left: 50px;
@@ -60,12 +77,14 @@
 
 .container-design .text-block .design-text-list .category-block .category-block__title {
   color: #fff6;
+  background-color: #0000;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: 500;
 }
 
 .container-design .text-block .design-text-list .category-block .categoty-box {
+  background-color: #0000;
   justify-content: space-between;
   gap: 2.5em;
   margin-top: 20px;
@@ -73,11 +92,13 @@
 }
 
 .container-design .text-block .design-text-list .category-block .categoty-box .category-list {
+  background-color: #0000;
   list-style-type: none;
 }
 
 .container-design .text-block .design-text-list .category-block .categoty-box .category-list .category-list__element {
   color: #fff;
+  background-color: #0000;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: 500;
@@ -87,6 +108,92 @@
 .container-design .text-block .design-text-list .category-block .categoty-box .category-list .category-list__element:hover {
   color: #fff6;
   cursor: pointer;
+}
+
+.container-design .design-block {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4);
+  gap: 106px 6vw;
+  width: 100%;
+  max-width: 1460px;
+  margin: 0 auto;
+  display: grid;
+  position: relative;
+}
+
+.container-design .design-block .design-element .design-element__image {
+  max-width: 100%;
+}
+
+.container-design .design-block .design-element .design-text-block {
+  justify-content: space-between;
+  padding-top: 20px;
+  display: flex;
+}
+
+.container-design .design-block .design-element .design-text-block .design-text-block__name {
+  color: #fff;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.container-design .design-block .design-element .design-text-block .design-text-block__name:hover {
+  color: #5b5b5b;
+  cursor: pointer;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button {
+  display: flex;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start {
+  color: #fff;
+  opacity: .5;
+  align-items: center;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-weight: 500;
+  display: flex;
+  position: relative;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start .design-element-button__arrow {
+  filter: brightness(2);
+  width: 25px;
+  padding-left: .3em;
+}
+
+.container-design .design-block .design-block__button {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  justify-content: center;
+  padding: 1.4em 7em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-design .design-block .design-block__button:hover {
+  color: #fff;
+  background-color: #0000;
+  animation: 2.2s infinite forwards shadow;
+}
+
+.container-design .design-element_blur {
+  filter: blur(10px);
+  opacity: .3;
 }
 
 /*# sourceMappingURL=index.b5d588ac.css.map */

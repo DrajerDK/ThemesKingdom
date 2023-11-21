@@ -1,6 +1,9 @@
 .container-design {
     max-width: 95%;
     margin: 0 auto;
+    position: relative;
+    padding-left: 80px;
+    padding-right: 80px;
     .text-block {
         display: flex;
         justify-content: center;
@@ -8,28 +11,44 @@
         flex-direction: column;
         max-width: 1460px;
         margin: 0 auto;
+        // position: absolute;
+        // bottom: 200px;
+        background-color: transparent;
+        width: 100%;
 
         .text-block__title {
             color: white;
             font-family: 'HK Guise', Helvetica, sans-serif;
             font-size: calc(9.08px + 5.62vw);
             font-weight: 500;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+
         }
         .design-text-list {
             display: flex;
             margin-top: 6vw;
             margin-bottom: 30px;
             justify-content: space-between;
+            background-color: transparent;
+            
             .subcrition-block {
+            background-color: transparent;
+
                 .subcrition-block__title {
                     color: rgba(255,255,255,.4);
                     font-family: 'HK Guise', Helvetica, sans-serif;
                     font-weight: 500;
                     font-size: .9rem;
+                    background-color: transparent;
+
                 }
                 .subcrition-list {
                     list-style-type: none;
                     margin-top: 20px;
+                    background-color: transparent;
+
 
                     .subcrition-list__element {
                         color: white;
@@ -37,6 +56,7 @@
                         font-family: 'HK Guise', Helvetica, sans-serif;
                         font-weight: 500;
                         line-height: 1.6;
+                        background-color: transparent;
                         &:hover {
                             color: rgba(255,255,255,.4);
                             cursor: pointer;
@@ -49,25 +69,30 @@
                 flex-direction: column;
                 max-width: 1460px;
                 margin-left: 50px;
+                background-color: transparent;
                 .category-block__title {
                     color: rgba(255,255,255,.4);
                     font-family: 'HK Guise', Helvetica, sans-serif;
                     font-weight: 500;
                     font-size: .9rem;
+                    background-color: transparent;
                 }
                 .categoty-box {
                     display: flex;
                     margin-top: 20px;
                     justify-content: space-between;
                     gap: 2.5em;
+                    background-color: transparent;
                     .category-list {
-                    list-style-type: none;                        
+                    list-style-type: none;
+                    background-color: transparent;                        
                         .category-list__element {
                             color: white;
                             font-size: .9rem;
                             font-family: 'HK Guise', Helvetica, sans-serif;
                             font-weight: 500;
                             line-height: 1.6;
+                            background-color: transparent;
                             &:hover {
                                 color: rgba(255,255,255,.4);
                                 cursor: pointer;
@@ -77,5 +102,89 @@
                 }
             }
         }
+    }
+
+
+    .design-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4);
+        width: 100%;
+        max-width: 1460px;
+        margin: 0 auto;
+        column-gap: 6vw;
+        row-gap: 106px;
+        position: relative;
+        .design-element {
+            
+            // width: 85%;
+            // padding-left: 3vw;
+            .design-element__image {
+                max-width: 100%;
+            }
+            .design-text-block {
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                .design-text-block__name {
+                    color: white;
+                    font-family: 'HK Guise', Helvetica, sans-serif;
+                    font-size: 1.125rem;
+                    font-weight: 500;
+                    &:hover {
+                        color:rgb(91, 91, 91);
+                        cursor: pointer;
+                    }
+                }
+                .design-element-button {
+                    display: flex;
+                    .design-element-button__botton-start {
+                        color: white;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        font-weight: 500;
+                        opacity: 0.5;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        &:hover {
+                            opacity: 1;
+                            cursor: pointer;
+                        }
+                        .design-element-button__arrow {
+                            width: 25px;
+                            filter: brightness(2);
+                            padding-left: 0.3em;
+                            
+                        }
+                    }                    
+                }
+            }
+        }
+        .design-block__button {
+            color: #000;
+            text-decoration: none;
+            border: 2px solid white;
+            background-color: white;
+            padding: 1.4em 7em;
+            display: flex;
+            justify-content: center;
+            border-radius: 3em;
+            font-weight: 400;
+            font-family: 'HK Guise', Helvetica, sans-serif;
+            position: absolute;
+            top: 93%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // margin: 0 auto;
+            &:hover {
+                background-color: transparent;
+                color: white;
+                animation: shadow 2.2s infinite forwards;
+            }
+        }
+    }
+    .design-element_blur {
+        filter: blur(10px);
+        opacity: 0.3;
     }
 }
