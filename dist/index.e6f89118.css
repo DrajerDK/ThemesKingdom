@@ -51,6 +51,7 @@
 }
 
 .container-banner .container-banner__video {
+  max-width: 100%;
   margin: 0 auto;
 }
 

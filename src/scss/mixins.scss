@@ -4,3 +4,16 @@
     font-weight: 500;
     font-size: calc(17.647px + 14.706vw);
 }
+@mixin button-white {
+    background-color: white;
+    color: #000;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 3em;
+    font-family: 'HK Guise', Helvetica, sans-serif;
+    &:hover {
+        background-color: transparent;
+        color: white;
+        animation: shadow 2.2s infinite forwards;
+    }
+}

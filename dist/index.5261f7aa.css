@@ -1,0 +1,66 @@
+.container-wordpress {
+  margin: 0 auto 8vw;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.container-wordpress .container-wordpress__title {
+  color: #fff;
+  width: 90%;
+  margin-bottom: .4em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(20.08px + 5.62vw);
+  font-weight: 500;
+}
+
+.container-wordpress .container-wordpress__title .title__cost {
+  color: #fff;
+  border: 4px solid #fff;
+  border-radius: 3em;
+  padding: .05em .4em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(20.46px + 4.142vw);
+}
+
+.container-wordpress .container-wordpress__title .title__cost:hover {
+  content: "пока";
+}
+
+.container-wordpress .container-wordpress__title .title__cost .cost__dollar {
+  color: #fff;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: 60%;
+}
+
+.container-wordpress .button-block-wordpress {
+  display: flex;
+}
+
+.container-wordpress .button-block-wordpress .button-block-wordpress__button {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  padding: 1.7em 4em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.container-wordpress .button-block-wordpress .button-block-wordpress__button:hover {
+  color: #fff;
+  background-color: #0000;
+  animation: 2.2s infinite forwards shadow;
+}
+
+.container-wordpress .button-block-wordpress .button-block-wordpress__descriprion {
+  color: #fff;
+  align-items: center;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(15px + .258vw);
+  font-weight: 400;
+  display: flex;
+  position: relative;
+  left: 30px;
+}
+
+/*# sourceMappingURL=index.5261f7aa.css.map */

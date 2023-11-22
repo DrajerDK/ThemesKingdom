@@ -1,0 +1,52 @@
+.container-customers {
+  background-color: #0000;
+  max-width: 100%;
+  display: flex;
+}
+
+.container-customers .container-customers__image, .container-customers .customers-text {
+  background-color: #0000;
+}
+
+.container-customers .customers-text .customers-text__title {
+  background-color: #0000;
+  margin-bottom: .5em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(20.08px + 5.62vw);
+  font-weight: 500;
+}
+
+.container-customers .customers-text .customers-text__button {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 3em;
+  padding: 1.4em 3.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(15px + .258vw);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container-customers .customers-text .customers-text__button:hover {
+  color: #000;
+  background-color: #0000;
+}
+
+.container-customers .customers-text .customers-comment {
+  background-color: #0000;
+}
+
+.container-customers .customers-text .customers-comment .customers-comment__text {
+  background-color: #0000;
+  margin-bottom: 2.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(19px + .259vw);
+  font-weight: 500;
+}
+
+.container-customers .customers-text .customers-comment .customers-switch, .container-customers .customers-text .customers-comment .customers-switch .customers-switch__customer-name, .container-customers .customers-text .customers-comment .customers-switch .customers-switch-block, .container-customers .customers-text .customers-comment .customers-switch .customers-switch-block .customers-switch-block__button {
+  background-color: #0000;
+}
+
+/*# sourceMappingURL=index.dbe16815.css.map */

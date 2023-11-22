@@ -1,0 +1,61 @@
+@import "variables";
+@import "mixins";
+.container-customers {
+    background-color: transparent;
+    display: flex;
+    max-width: 100%;
+    .container-customers__image {
+    background-color: transparent;
+
+    }
+    .customers-text {
+    background-color: transparent;
+
+        .customers-text__title {
+            font-family: $main-font-family;
+            font-size: calc(20.08px + 5.62vw);
+            font-weight: 500;
+            background-color: transparent;
+            margin-bottom: 0.5em;
+        }
+        .customers-text__button {
+        background-color: transparent;
+        font-weight: 400;
+        font-family: $main-font-family;
+        font-size: calc(15px + 0.258vw);
+        text-decoration: none;
+        color: $main-font-color;
+        background-color: #000;
+        border-radius: 3em;
+        border: 2px solid #000;
+        padding: 1.4em 3.2em;
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+        }
+        .customers-comment {
+            background-color: transparent;
+            .customers-comment__text {
+                background-color: transparent;
+                margin-bottom: 2.2em;
+                font-family: $main-font-family;
+                font-size: calc(19px + 0.259vw);
+                font-weight: 500;
+                margin-bottom: 2.2em;   
+            }
+            .customers-switch {
+                background-color: transparent;
+                .customers-switch__customer-name {
+                    background-color: transparent;
+                }
+                .customers-switch-block {
+                    background-color: transparent;
+                    .customers-switch-block__button {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

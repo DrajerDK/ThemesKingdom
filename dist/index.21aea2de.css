@@ -1,0 +1,39 @@
+.section-ticker {
+  width: 100%;
+  overflow: hidden;
+}
+
+.section-ticker .ticker-box {
+  background-color: #0000;
+  width: 120%;
+  margin-top: 300px;
+  margin-bottom: 150px;
+  position: relative;
+  right: 10%;
+  overflow: hidden;
+  transform: rotate(10deg);
+}
+
+.section-ticker .ticker-box .ticker-box__ticker {
+  white-space: nowrap;
+  background-color: #0000;
+  max-height: 21vw;
+  animation: 30s linear infinite marquee;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=index.21aea2de.css.map */

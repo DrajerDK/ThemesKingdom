@@ -1,0 +1,52 @@
+// .section-ticker {
+//     width: 100%;
+//     height: 200px;
+//     .ticker {
+//         height: 200px;
+//         .ticker__image {
+//             height: 200px;
+//             width: 40%;
+
+//         }
+//     }
+// }
+.section-ticker {
+    width: 100%;
+    overflow: hidden;
+
+    .ticker-box {
+        width: 120%;
+        background-color: transparent;
+        margin-top: 300px;
+        margin-bottom: 150px;
+        
+        overflow: hidden;
+        // white-space: nowrap;
+        position: relative;
+        right: 10%;
+        transform: rotate(10deg);
+        .ticker-box__ticker {
+            max-height: 21vw;
+            background-color: transparent;
+            animation: marquee 30s linear infinite;
+            overflow: hidden;
+            overflow: hidden;
+
+            white-space: nowrap;
+            // position: absolute;
+        }
+
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}

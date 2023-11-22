@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+.container-wordpress {
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 8vw;
+    .container-wordpress__title {
+        color: $main-font-color;
+        font-family: $main-font-family;
+        font-size: calc(20.08px + 5.62vw);
+        font-weight: 500;
+        margin-bottom: 0.4em;
+        width: 90%;
+        .title__cost {
+            color: $main-font-color;
+            font-family: $main-font-family;
+            padding: 0.05em 0.4em;
+            border: 4px solid white;
+            font-size: calc(20.46px + 4.142vw);
+            border-radius: 3em;
+            &:hover {
+                content: "пока";
+            }
+            .cost__dollar {
+                color: $main-font-color;
+                font-family: $main-font-family;
+                font-size: 60%;
+            }
+        }
+    }
+    .button-block-wordpress {
+        display: flex;
+        .button-block-wordpress__button {
+            @include button-white;
+            padding: 1.7em 4em;
+        }
+        .button-block-wordpress__descriprion {
+            color: $main-font-color;
+            font-family: $main-font-family;
+            display: flex;
+            align-items: center;
+            font-weight: 400;
+            font-size: calc(15px + 0.258vw);
+            position: relative;
+            left: 30px;
+        }
+    }
+}
