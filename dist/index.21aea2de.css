@@ -18,7 +18,7 @@
   white-space: nowrap;
   background-color: #0000;
   max-height: 21vw;
-  animation: 30s linear infinite marquee;
+  animation: 40s linear infinite marquee;
   overflow: hidden;
 }
 

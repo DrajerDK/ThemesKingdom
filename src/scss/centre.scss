@@ -1,2 +1,44 @@
 @import "variables";
 @import "mixins";
+.container-centre {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding: 11vh;
+    .centre-text-block {
+        background-color: transparent;
+        width: 37.4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        .centre-text-block__title {
+            background-color: transparent;
+            font-family: $main-font-family;
+            font-size: calc(23px + 4.53vw);
+            font-weight: 500;
+            background-color: transparent;
+            margin-bottom: 0.7em;
+            line-height: 1;
+        }
+        .centre-text-block__text {
+            background-color: transparent;
+            font-family: $main-font-family;
+            font-size: calc(19px + 0.259vw);
+            line-height: 1.417;
+            font-weight: 500;
+            margin-bottom: 3em;
+
+        }
+        .centre-text-block__button {
+            @include button-black;
+            // margin: 0 auto;
+        }
+    }
+    .centre-text-block__video {
+        background-color: transparent;
+        width: 37.4%;
+    }
+}

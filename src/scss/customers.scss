@@ -10,7 +10,7 @@
     padding-bottom: 14em;
     .container-customers__image {
     background-color: transparent;
-
+    max-width: 40vw;
     }
     .customers-text {
         margin-left: 3em;
@@ -30,20 +30,7 @@
 
         }
         .customers-text__button {
-        background-color: transparent;
-        font-weight: 400;
-        font-family: $main-font-family;
-        font-size: calc(15px + 0.258vw);
-        text-decoration: none;
-        color: $main-font-color;
-        background-color: #000;
-        border-radius: 3em;
-        border: 2px solid #000;
-        padding: 1.4em 3.2em;
-        &:hover {
-            background-color: transparent;
-            color: #000;
-        }
+        @include button-black;
         }
         .customers-comment {
             background-color: transparent;
@@ -65,7 +52,7 @@
                 .customers-switch__customer-name {
                     background-color: transparent;
                     font-family: $main-font-family;
-                    font-size: 16px;
+                    font-size: 20px;
                     font-weight: 500;
                     display: flex;
                     align-items: flex-end;

@@ -1,0 +1,57 @@
+.container-centre {
+  background-color: #0000;
+  justify-content: space-between;
+  padding: 11vh;
+  display: flex;
+}
+
+.container-centre .centre-text-block {
+  background-color: #0000;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 37.4%;
+  display: flex;
+}
+
+.container-centre .centre-text-block .centre-text-block__title {
+  background-color: #0000;
+  margin-bottom: .7em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(23px + 4.53vw);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.container-centre .centre-text-block .centre-text-block__text {
+  background-color: #0000;
+  margin-bottom: 3em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(19px + .259vw);
+  font-weight: 500;
+  line-height: 1.417;
+}
+
+.container-centre .centre-text-block .centre-text-block__button {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 3em;
+  padding: 1.4em 3.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(15px + .258vw);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container-centre .centre-text-block .centre-text-block__button:hover {
+  color: #000;
+  background-color: #0000;
+}
+
+.container-centre .centre-text-block__video {
+  background-color: #0000;
+  width: 37.4%;
+}
+
+/*# sourceMappingURL=index.70118b90.css.map */

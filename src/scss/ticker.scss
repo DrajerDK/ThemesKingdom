@@ -13,7 +13,6 @@
 .section-ticker {
     width: 100%;
     overflow: hidden;
-
     .ticker-box {
         width: 120%;
         background-color: transparent;
@@ -28,10 +27,9 @@
         .ticker-box__ticker {
             max-height: 21vw;
             background-color: transparent;
-            animation: marquee 30s linear infinite;
+            animation: marquee 40s linear infinite;
             overflow: hidden;
             overflow: hidden;
-
             white-space: nowrap;
             // position: absolute;
         }
