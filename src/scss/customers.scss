@@ -3,20 +3,31 @@
 .container-customers {
     background-color: transparent;
     display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 6em;
     max-width: 100%;
+    padding-bottom: 14em;
     .container-customers__image {
     background-color: transparent;
 
     }
     .customers-text {
-    background-color: transparent;
-
+        margin-left: 3em;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+        align-items: flex-end;
         .customers-text__title {
             font-family: $main-font-family;
             font-size: calc(20.08px + 5.62vw);
             font-weight: 500;
             background-color: transparent;
             margin-bottom: 0.5em;
+            line-height: 0.9;
+            text-align: right;
+
         }
         .customers-text__button {
         background-color: transparent;
@@ -42,17 +53,41 @@
                 font-family: $main-font-family;
                 font-size: calc(19px + 0.259vw);
                 font-weight: 500;
-                margin-bottom: 2.2em;   
+                margin-bottom: 2.2em;
+                padding-right: 120px;
+                padding-top: 7vw;
+                line-height: 1.5;
             }
             .customers-switch {
                 background-color: transparent;
+                display: flex;
+                justify-content: space-between;
                 .customers-switch__customer-name {
                     background-color: transparent;
+                    font-family: $main-font-family;
+                    font-size: 16px;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: flex-end;
                 }
                 .customers-switch-block {
                     background-color: transparent;
+                    width: 40%;
+                    display: flex;
+                    justify-content: space-between;
                     .customers-switch-block__button {
                         background-color: transparent;
+                        border: none;
+                        font-size: calc(24.8px + 2.46vw);
+                        font-family: $main-font-family;
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                    .customers-switch-block__button_opacity {
+                        opacity: 0.5;
+                        &:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
