@@ -1,0 +1,93 @@
+.container-niches {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.container-niches .niches-block .niches-block__title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.647px + 14.706vw);
+  font-weight: 500;
+}
+
+.container-niches .niches-block .niches-content {
+  display: flex;
+}
+
+.container-niches .niches-block .niches-content .niches-text {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  display: flex;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-list {
+  line-height: 1.1;
+  list-style-type: none;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element {
+  opacity: .5;
+  color: #fff;
+  cursor: pointer;
+  padding-top: .15em;
+  padding-bottom: .15em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(18px + .906vw);
+  display: flex;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element:hover {
+  opacity: 1;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element .element__button {
+  color: #000;
+  opacity: 1;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  align-items: center;
+  margin-left: 1em;
+  padding: .4em 1em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9375rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element .element__button:hover {
+  color: #fff;
+  background-color: #0000;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element_opacity {
+  opacity: 1;
+}
+
+.container-niches .niches-block .niches-content .niches-text .niches-text__description {
+  color: #fff;
+  opacity: .5;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.09px + .7767vw);
+  position: relative;
+  bottom: 50px;
+}
+
+.container-niches .niches-block .niches-content .niches-image-box {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 60%;
+  display: flex;
+}
+
+.container-niches .niches-block .niches-content .niches-image-box .niches-image-box__image {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=index.3daa8184.css.map */

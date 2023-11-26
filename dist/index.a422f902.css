@@ -1,0 +1,69 @@
+.container-showcase {
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.container-showcase .showcase-block .showcase-block__title {
+  color: #fff;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.647px + 14.706vw);
+  font-weight: 500;
+  display: flex;
+}
+
+.container-showcase .showcase-block .showcase-content {
+  display: flex;
+}
+
+.container-showcase .showcase-block .showcase-content .showcase-text {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 35%;
+  display: flex;
+}
+
+.container-showcase .showcase-block .showcase-content .showcase-text .showcase-text__description {
+  color: #fff;
+  opacity: .5;
+  margin-bottom: 1.5em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.09px + .7767vw);
+}
+
+.container-showcase .showcase-block .showcase-content .showcase-text .showcase-button-box .showcase-button-box__button {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  padding: 1.4em 3.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.container-showcase .showcase-block .showcase-content .showcase-text .showcase-button-box .showcase-button-box__button:hover {
+  color: #fff;
+  background-color: #0000;
+  animation: 2.2s infinite forwards shadow;
+}
+
+.container-showcase .showcase-block .showcase-content .showcase-image-box {
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 63%;
+  display: flex;
+}
+
+.container-showcase .showcase-block .showcase-content .showcase-image-box .showcase-image-box__image {
+  align-items: flex-end;
+  width: 80%;
+  display: flex;
+}
+
+/*# sourceMappingURL=index.a422f902.css.map */

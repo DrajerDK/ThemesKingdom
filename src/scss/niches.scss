@@ -1,0 +1,85 @@
+@import "mixins";
+@import "variables";
+.container-niches {
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .niches-block {
+        .niches-block__title {
+            @include presintation-title-style;
+            margin-bottom: 20px;
+        }
+        .niches-content {
+            display: flex;
+            .niches-text {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .niches-list {
+                    list-style-type: none;
+                    line-height: 1.1;
+                    .niches-list__element {
+                        font-family: $main-font-family;
+                        opacity: 0.5;
+                        color: $main-font-color;
+                        font-size: calc(18px + 0.906vw);
+                        padding-top: 0.15em;
+                        padding-bottom: 0.15em;
+                        cursor: pointer;
+                        display: flex;
+                        &:hover {
+                            opacity: 1;
+                        }
+                        .element__button {
+                            font-family: $main-font-family;
+                            color: #000;
+                            background-color: white;
+                            font-size: 0.9375rem;
+                            padding: 0.4em 1em;
+                            border: 2px solid white;
+                            border-radius: 3em;
+                            margin-left: 1em;
+                            font-weight: 500;
+                            display: flex;
+                            align-items: center;
+                            opacity: 1;
+                            &:hover {
+                                color: $main-font-color;
+                                background-color: transparent;
+                            }
+                        }
+                    }
+                    .niches-list__element_padding {
+
+                    }
+                    .niches-list__element_opacity {
+                        opacity: 1;
+                    }
+                }
+                .niches-text__description {
+                    font-size: calc(17.09px + 0.7767vw);
+                    font-family: $main-font-family;
+                    color: $main-font-color;
+                    opacity: 0.5;
+                    position: relative;
+                    bottom: 50px;
+
+                }
+            }
+            .niches-image-box {
+                width: 60%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                .niches-image-box__image {
+                    max-width: 100%;
+                    // width: 88%;
+                }
+            }
+        }
+    }
+}
