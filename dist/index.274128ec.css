@@ -40,6 +40,7 @@
 
 .container-navigation .newsletter-block .input-box {
   background-color: #0000;
+  max-width: 350px;
   position: relative;
 }
 
@@ -49,8 +50,7 @@
   border: none;
   border-radius: 3em;
   align-items: center;
-  width: 100%;
-  max-width: 350px;
+  max-width: 100%;
   padding: .7em 3.2em .7em 1.8rem;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: calc(19px + .259vw);
@@ -87,7 +87,7 @@
   width: 50px;
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: .5%;
   transform: translateY(-50%);
 }
 
