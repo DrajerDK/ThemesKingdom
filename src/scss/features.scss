@@ -1,0 +1,76 @@
+@import "mixins";
+@import "variables";
+.container-features {
+    padding-top: 70px;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 14vw;
+    margin-bottom: 14em;
+    .features-block {
+        width: 100%;
+        .features-block__title {
+            @include presintation-title-style;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .features-content {
+            display: flex;
+            margin-top: 5em;
+            .features-video-box {
+                width: 50%;
+                justify-content: flex-end;
+                align-items: flex-start;
+                .features-video-box__video {
+                    width: 90%;
+                }
+            }
+            .features-text-block {
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+                width: 45%;
+                .features-text-block__description {
+                    font-size: calc(17.09px + 0.7767vw);
+                    font-family: $main-font-family;
+                    color: $main-font-color;
+                    margin-bottom: 2.2em;
+                    opacity: 0.5;
+                    text-align: start;
+                }
+                .features-button-block {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    .features-button-block__button {
+                        @include button-white;
+                        padding: 1.4em 3.2em;
+                    }
+                    .features-switch-block {
+                        width: 25%;
+                        display: flex;
+                        justify-content: space-between;
+                        .features-switch-block__button {
+                            color: $main-font-color;
+                            border: none;
+                            font-weight: 500;
+                            font-family: $main-font-family;
+                            font-size: calc(24.8px + 2.46vw);
+                            cursor: pointer;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                        .features-switch-block__button_opacity {
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
