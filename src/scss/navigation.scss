@@ -1,0 +1,117 @@
+@import "variables";
+@import "mixins";
+.container-navigation {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 6vw;
+    .newsletter-block {
+        background-color: transparent;
+        max-width: 420px;
+        .newsletter-block__title {
+            @include footer-title;
+            margin: 50px 0 20px;
+        }
+        .newsletter-block__text {
+            background-color: transparent;
+            font-family: $main-font-family;
+            font-size: calc(23.6px + 0.6472vw);
+            font-weight: 500;
+            margin-bottom: 4vw;
+        }
+        .newsletter-block__description {
+            background-color: transparent;
+            font-family: $main-font-family;
+            font-size: .9rem;
+            color: rgba(0,0,0,.3);
+            font-weight: 500;
+            margin-bottom: 2.4em;
+        }
+        .input-box {      
+            background-color: transparent;
+            position: relative;
+            .input-box__input-space {
+                background-color: #c2c2c2;
+                font-family: $main-font-family;
+                font-size: calc(19px + 0.259vw);
+                font-weight: 500;
+                line-height: 1.8em;
+                border: none;
+                border-radius: 3em;
+                line-height: 1.8em;
+                // padding: 0.6em 0;
+                padding: 0.7em 0;
+                max-width: 350px;
+                color: white;
+
+                // padding-top: 0.75em;
+                // padding-bottom: 0.75em;
+                padding-left: 1.8rem;
+                padding-right: 3.2em;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                &:hover {
+                background-color: #a7a7a7;
+
+                }
+                &::placeholder {
+                    font-family: $main-font-family;
+                    color: white;
+                    font-size: calc(19px + 0.259vw);
+                    font-weight: 500;
+                    line-height: 1.8em;
+                }
+                &:focus {
+                    outline: none;
+                    color: white;
+                    background-color: #000;
+                    &:hover {
+                    background-color: #d9d9d9;
+                    }
+                }
+            }
+            .input-box__arrow {
+                background-color: transparent;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 15px;
+                width: 50px;
+                opacity: 0.5;
+            }
+        }
+    }
+    .navigation-block {
+        background-color: transparent;
+        display: flex;
+        .navigation-box {
+            background-color: transparent;
+            margin: 0 30px;
+            .navigation-box__title {
+                background-color: transparent;
+                @include footer-title;
+                margin: 50px 0 20px;
+            }
+            .navigation-list {
+                background-color: transparent;
+                list-style-type: none;
+
+                .navigation-list__element {
+                    background-color: transparent;
+                    font-family: $main-font-family;
+                    font-size: calc(14.5px + 0.388vw);
+                    font-weight: 500;
+                    margin-bottom: 0.5em;
+                    line-height: 1.6;
+                    cursor: pointer;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

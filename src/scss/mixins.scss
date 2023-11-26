@@ -34,3 +34,10 @@
         color: #000;
     }
 }
+@mixin footer-title {
+    background-color: transparent;
+    font-family: $main-font-family;
+    font-size: calc(14.5px + 0.388vw);
+    font-weight: 500;
+    color: rgba(0,0,0,.2);
+}

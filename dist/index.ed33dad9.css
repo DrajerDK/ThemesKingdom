@@ -1,0 +1,96 @@
+.container-get-started {
+  background-color: #0000;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 15vw;
+  display: flex;
+}
+
+.container-get-started .get-started-marqee-box {
+  background-color: #0000;
+  display: flex;
+  overflow: hidden;
+}
+
+.container-get-started .get-started-marqee-box .marqee-get-started-element {
+  background-color: #0000;
+  text-decoration: none;
+  animation: 20s linear infinite marquee;
+  display: flex;
+}
+
+.container-get-started .get-started-marqee-box .marqee-get-started-element .marqee-get-started-element__text {
+  color: #000;
+  white-space: nowrap;
+  background-color: #0000;
+  flex-direction: row;
+  margin: 0 .3em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(32px + 18.122vw);
+  font-weight: 500;
+  display: flex;
+}
+
+.container-get-started .get-started-marqee-box .marqee-get-started-element .marqee-image-box {
+  background-color: #0000;
+  align-items: center;
+  width: 400px;
+  display: flex;
+}
+
+.container-get-started .get-started-marqee-box .marqee-get-started-element .marqee-image-box .marqee-image-box__image {
+  background-color: #0000;
+  max-width: 100%;
+}
+
+.container-get-started .get-started-button-box {
+  background-color: #0000;
+  justify-content: flex-end;
+  margin-top: 5vw;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.container-get-started .get-started-button-box .get-started-button-box__description {
+  background-color: #0000;
+  align-items: center;
+  margin-right: 1em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.container-get-started .get-started-button-box .get-started-button-box__button {
+  color: #fff;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 3em;
+  padding: 1.4em 3.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(15px + .258vw);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container-get-started .get-started-button-box .get-started-button-box__button:hover {
+  color: #000;
+  background-color: #0000;
+}
+
+@keyframes marquee-get-started {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=index.ed33dad9.css.map */
