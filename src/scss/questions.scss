@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+.container-questions {
+    background-color: transparent;
+    padding-left: 80px;
+    padding-right: 80px;
+    .container-questions__title {
+        background-color: transparent;
+        font-family: $main-font-family;
+        font-size: calc(32px + 18.122vw);
+        font-weight: 500;
+        margin-bottom: 0.2em;
+        margin-left: -0.08em;
+        letter-spacing: -0.1em;
+    }
+    .questions-block {
+        background-color: transparent;
+
+        .questions-element {
+            background-color: transparent;
+            font-family: $main-font-family;
+            line-height: 1.3;
+            position: relative;
+            margin-bottom: 26px;
+            padding-bottom: 26px;
+            border-bottom: 2px solid rgba(0,0,0,0.1);
+            cursor: pointer;
+            .questions-element__text {
+                background-color: transparent;
+                font-size: calc(17.09px + 0.7767vw);
+            }
+            .questions-element__plus {
+                background-color: transparent;
+                font-family: 'Raleway', sans-serif;
+                font-size: 4em;
+                font-weight: 200;
+                position: absolute;
+                right: 0;
+                line-height: .7;
+            }
+        }
+    }
+}
