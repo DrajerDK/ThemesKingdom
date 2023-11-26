@@ -41,3 +41,9 @@
     font-weight: 500;
     color: rgba(0,0,0,.2);
 }
+@mixin footer-information-text {
+    font-family: $main-font-family;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgba(0,0,0,.3);
+}

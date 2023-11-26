@@ -1,0 +1,54 @@
+.container-footer-information {
+  background-color: #0000;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.container-footer-information .container-footer-information__logo {
+  background-color: #0000;
+  width: 135px;
+  max-width: 100%;
+}
+
+.container-footer-information .footer-information-box {
+  background-color: #0000;
+  display: flex;
+}
+
+.container-footer-information .footer-information-box .footer-information-box__name {
+  color: #0000004d;
+  background-color: #0000;
+  align-items: center;
+  margin-right: 15px;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+  display: flex;
+}
+
+.container-footer-information .footer-information-box .footer-navigation {
+  background-color: #0000;
+  align-items: center;
+  display: flex;
+}
+
+.container-footer-information .footer-information-box .footer-navigation .footer-navigation__button {
+  color: #0000004d;
+  background-color: #0000;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .875rem;
+  font-weight: 500;
+}
+
+.container-footer-information .footer-information-box .footer-navigation .footer-navigation__button:hover {
+  color: #000;
+}
+
+.container-footer-information .footer-information-box .footer-navigation .footer-navigation__button_space {
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=index.cb1cc6bc.css.map */

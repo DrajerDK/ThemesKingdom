@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+.container-footer-information {
+    background-color: transparent;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    .container-footer-information__logo {
+        background-color: transparent;
+        max-width: 100%;
+        width: 135px;
+    }
+    .footer-information-box {
+        background-color: transparent;
+        display: flex;
+        .footer-information-box__name {
+            @include footer-information-text;
+            background-color: transparent;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .footer-navigation {
+            background-color: transparent;
+            display: flex;
+            align-items: center;
+            .footer-navigation__button {
+                @include footer-information-text;
+                background-color: transparent;
+                &:hover {
+                    color: #000;
+                }
+            }
+            .footer-navigation__button_space {
+                margin-right: 5px;
+            }
+        }
+
+    }
+}
