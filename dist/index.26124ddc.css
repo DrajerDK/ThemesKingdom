@@ -1,0 +1,108 @@
+.container-sites {
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1460px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+}
+
+.container-sites .sites-block {
+  width: 100%;
+}
+
+.container-sites .sites-block .sites-block__title {
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(17.647px + 14.706vw);
+  font-weight: 500;
+}
+
+.container-sites .sites-block .sites-content {
+  justify-content: space-between;
+  display: flex;
+}
+
+.container-sites .sites-block .sites-content .sites-text {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40%;
+  display: flex;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-list {
+  list-style: none;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-list .sites-list__element {
+  color: #fff;
+  cursor: pointer;
+  width: 100%;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(14.39px + .8vw);
+  font-weight: 500;
+  line-height: 1.6;
+  display: flex;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-list .sites-list__element .element__mark {
+  height: 5vh;
+  margin-right: .4em;
+  position: relative;
+  top: 3px;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-button-block {
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-button-block .sites-button-block__button {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3em;
+  padding: 1.4em 3.2em;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: calc(15px + .258vw);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-button-block .sites-button-block__button:hover {
+  color: #fff;
+  background-color: #0000;
+  animation: 2.2s infinite forwards shadow;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-button-block .sites-button-block__try-button {
+  color: #fff;
+  background-color: #0000;
+  margin-left: 2vw;
+  font-family: HK Guise, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container-sites .sites-block .sites-content .sites-text .sites-button-block .sites-button-block__try-button:hover {
+  opacity: .3;
+}
+
+.container-sites .sites-block .sites-content .sites-video-box {
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 50%;
+  display: flex;
+}
+
+.container-sites .sites-block .sites-content .sites-video-box .sites-video-box__video {
+  width: 88%;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=index.26124ddc.css.map */

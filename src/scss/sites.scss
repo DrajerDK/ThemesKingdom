@@ -1,0 +1,93 @@
+@import "mixins";
+@import "variables";
+.container-sites {
+    padding-top: 70px;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .sites-block {
+        width: 100%;
+        .sites-block__title {
+            @include presintation-title-style;
+            margin-bottom: 20px;
+        }
+        .sites-content {
+            display: flex;
+            justify-content: space-between;
+            .sites-text {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 40%;
+                .sites-list {
+                    list-style: none;
+                    .sites-list__element {
+                        color: white;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        line-height: 1.6;
+                        font-weight: 500;
+                        font-size: calc(14.39px + 0.8vw);
+                        display: flex;
+                        width: 100%;
+                        cursor: pointer;
+                        .element__mark {
+                            height: 5vh;
+                            margin-right: 0.4em;
+                            position: relative;
+                            top: 3px;
+                        }
+                    }
+                }
+                .sites-button-block {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    .sites-button-block__button {
+                        color: #000;
+                        background-color: white;
+                        border: 2px solid white;
+                        padding: 1.4em 3.2em;
+                        border-radius: 3em;
+                        text-decoration: none;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        font-weight: 400;
+                        font-size: calc(15px + 0.258vw);
+                        &:hover {
+                            background-color: transparent;
+                            color: white;
+                            animation: shadow 2.2s infinite forwards;
+    
+                        }
+                    }
+                    .sites-button-block__try-button {
+                        font-size: .9rem;
+                        color: white;
+                        font-family: 'HK Guise', Helvetica, sans-serif;
+                        font-weight: 500;
+                        text-decoration: none;
+                        margin-left: 2vw;
+                        background-color: transparent;
+                        &:hover {
+                            opacity: 0.3;
+                        }
+                    }
+
+                }
+            }
+            .sites-video-box {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: flex-start;
+                .sites-video-box__video {
+                    max-width: 100%;
+                    width: 88%;
+                }
+            }
+        }
+    }
+}
