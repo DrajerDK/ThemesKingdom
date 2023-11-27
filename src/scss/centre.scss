@@ -7,6 +7,11 @@
     padding-left: 80px;
     padding-right: 80px;
     padding: 11vh;
+    @media screen and (max-width: 1070px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+    }
     .centre-text-block {
         background-color: transparent;
         width: 37.4%;
@@ -14,6 +19,10 @@
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
+        @media screen and (max-width: 1070px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
         .centre-text-block__title {
             background-color: transparent;
             font-family: $main-font-family;
@@ -34,11 +43,15 @@
         }
         .centre-text-block__button {
             @include button-black;
-            // margin: 0 auto;
+            text-align: center;
+            margin: 0 auto;
         }
     }
     .centre-text-block__video {
         background-color: transparent;
         width: 37.4%;
+        @media screen and (max-width: 1070px) {
+            width: 100%;
+        }
     }
 }
