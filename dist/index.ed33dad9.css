@@ -70,11 +70,17 @@
   text-align: center;
   background-color: #0000;
   align-items: center;
-  margin-right: 1em;
+  margin: 0 auto;
   font-family: HK Guise, Helvetica, sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   display: flex;
+}
+
+@media screen and (width <= 1070px) {
+  .container-get-started .get-started-button-box .get-started-button-box__description {
+    margin-bottom: 10px;
+  }
 }
 
 .container-get-started .get-started-button-box .get-started-button-box__button {
