@@ -5,25 +5,45 @@
     padding-left: 80px;
     padding-right: 80px;
     padding-top: 120px;
-
     display: flex;
     justify-content: center;
     flex-direction: column;
+    @media screen and (max-width: 902px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 5em;
+    }
     .showcase-block {
+        @media screen and (max-width: 902px) {
+            width: 100%;
+        }
         .showcase-block__title {
             @include presintation-title-style;
             display: flex;
             justify-content: flex-end;
             margin-bottom: 20px;
+            @media screen and (max-width: 400px) {
+                justify-content: center;
+                margin: 0 auto;
+                width: 85%;
+                overflow-wrap: break-word;
+                font-size: calc(14.647px + 14.706vw);
+
+            }
         }
         .showcase-content {
             display: flex;
+            @media screen and (max-width: 902px) {
+                flex-direction: column;
+            }
             .showcase-text {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 width: 35%;
-
+                @media screen and (max-width: 902px) {
+                    width: 100%;
+                }
                 .showcase-text__description {
                     font-size: calc(17.09px + 0.7767vw);
                     font-family: $main-font-family;
@@ -32,9 +52,14 @@
                     margin-bottom: 1.5em;
                 }
                 .showcase-button-box {
+                    @media screen and (max-width: 902px) {
+                        display: flex;
+                        justify-content: center;
+                    }
                     .showcase-button-box__button {
                         @include button-white;
                         padding: 1.4em 3.2em;
+                        text-align: center  ;
                     }
                 }
             }
@@ -43,11 +68,17 @@
                 display: flex;
                 align-items: flex-end;
                 justify-content: flex-end;
-
+                @media screen and (max-width: 902px) {
+                    width: 100%;
+                    margin-top: 15%;
+                }
                 .showcase-image-box__image {
                     width: 80%;
                     display: flex;
                     align-items: flex-end;
+                    @media screen and (max-width: 902px) {
+                        width: 100%;
+                    }
                 }
             }
         }

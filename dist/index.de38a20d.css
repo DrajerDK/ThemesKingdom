@@ -11,6 +11,7 @@
 
 @media screen and (width <= 902px) {
   .container-features {
+    margin-bottom: 5em;
     padding-left: 20px;
     padding-right: 20px;
   }

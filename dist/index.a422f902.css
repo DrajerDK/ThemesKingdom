@@ -8,6 +8,18 @@
   display: flex;
 }
 
+@media screen and (width <= 902px) {
+  .container-showcase {
+    margin-bottom: 5em;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .container-showcase .showcase-block {
+    width: 100%;
+  }
+}
+
 .container-showcase .showcase-block .showcase-block__title {
   color: #fff;
   justify-content: flex-end;
@@ -18,8 +30,24 @@
   display: flex;
 }
 
+@media screen and (width <= 400px) {
+  .container-showcase .showcase-block .showcase-block__title {
+    overflow-wrap: break-word;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    font-size: calc(14.647px + 14.706vw);
+  }
+}
+
 .container-showcase .showcase-block .showcase-content {
   display: flex;
+}
+
+@media screen and (width <= 902px) {
+  .container-showcase .showcase-block .showcase-content {
+    flex-direction: column;
+  }
 }
 
 .container-showcase .showcase-block .showcase-content .showcase-text {
@@ -27,6 +55,12 @@
   justify-content: space-between;
   width: 35%;
   display: flex;
+}
+
+@media screen and (width <= 902px) {
+  .container-showcase .showcase-block .showcase-content .showcase-text {
+    width: 100%;
+  }
 }
 
 .container-showcase .showcase-block .showcase-content .showcase-text .showcase-text__description {
@@ -37,8 +71,16 @@
   font-size: calc(17.09px + .7767vw);
 }
 
+@media screen and (width <= 902px) {
+  .container-showcase .showcase-block .showcase-content .showcase-text .showcase-button-box {
+    justify-content: center;
+    display: flex;
+  }
+}
+
 .container-showcase .showcase-block .showcase-content .showcase-text .showcase-button-box .showcase-button-box__button {
   color: #000;
+  text-align: center;
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 3em;
@@ -60,10 +102,23 @@
   display: flex;
 }
 
+@media screen and (width <= 902px) {
+  .container-showcase .showcase-block .showcase-content .showcase-image-box {
+    width: 100%;
+    margin-top: 15%;
+  }
+}
+
 .container-showcase .showcase-block .showcase-content .showcase-image-box .showcase-image-box__image {
   align-items: flex-end;
   width: 80%;
   display: flex;
+}
+
+@media screen and (width <= 902px) {
+  .container-showcase .showcase-block .showcase-content .showcase-image-box .showcase-image-box__image {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.a422f902.css.map */
