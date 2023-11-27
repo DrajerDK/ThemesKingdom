@@ -53,6 +53,21 @@
 .container-banner .container-banner__video {
   max-width: 100%;
   margin: 0 auto;
+  animation: 10s linear infinite rocking;
+}
+
+@keyframes rocking {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 /*# sourceMappingURL=index.e6f89118.css.map */

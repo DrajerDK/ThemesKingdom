@@ -12,9 +12,26 @@
     flex-direction: column;
     .sites-block {
         width: 100%;
-        .sites-block__title {
-            @include presintation-title-style;
-            margin-bottom: 20px;
+        .sites-title-block {
+            display: flex;
+            .sites-title-block__title {
+                @include presintation-title-style;
+                margin-bottom: 20px;
+            }
+            .sites-title-block__badge {
+                font-size: calc(19px + 0.259vw);
+                font-family: $main-font-family;
+                background-color: #ffe81e;
+                width: 3.4em;
+                height: 3.4em;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -30px;
+                margin-top: 40px;
+                animation: rollaround 4s linear infinite forwards;
+            }
         }
         .sites-content {
             display: flex;
@@ -91,4 +108,8 @@
             }
         }
     }
+}
+@keyframes rollaround {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
 }
