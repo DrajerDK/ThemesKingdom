@@ -4,6 +4,10 @@
     position: relative;
     padding-left: 80px;
     padding-right: 80px;
+    @media screen and (max-width: 712px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .text-block {
         display: flex;
         justify-content: center;
@@ -23,6 +27,9 @@
         @media screen and (max-width: 500px) {
             transform: translate(50%, -10%);
         }
+        @media screen and (max-width: 356px) {
+            transform: translate(50%, -0%);
+        }
         .text-block__title {
             color: white;
             font-family: 'HK Guise', Helvetica, sans-serif;
@@ -37,12 +44,15 @@
             display: flex;
             margin-top: 6vw;
             margin-bottom: 30px;
-            // justify-content: space-between;
+            justify-content: space-between;
             background-color: transparent;
             width: 100%;
+            flex-wrap: wrap;
+            @media screen and (max-width: 800px) {
+                flex-direction: column;
+            }
             .subcrition-block {
             background-color: transparent;
-            flex-wrap: wrap;
 
                 .subcrition-block__title {
                     color: rgba(255,255,255,.4);
@@ -79,6 +89,10 @@
                 width: 80%;
                 margin: 0 auto;
                 background-color: transparent;
+                @media screen and (max-width: 800px) {
+                    width: 95%;
+                    margin: 0;
+                }
                 .category-block__title {
                     color: rgba(255,255,255,.4);
                     font-family: 'HK Guise', Helvetica, sans-serif;
@@ -93,10 +107,16 @@
                     gap: 2.5em;
                     background-color: transparent;
                     flex-wrap: wrap;
-
+                    @media screen and (max-width: 800px) {
+                        justify-content: flex-start;
+                        gap: 1em;
+                    }
                     .category-list {
                     list-style-type: none;
-                    background-color: transparent;                        
+                    background-color: transparent;
+                    @media screen and (max-width: 800px) {
+                        list-style: none;
+                    }
                         .category-list__element {
                             color: white;
                             font-size: .9rem;
@@ -104,6 +124,7 @@
                             font-weight: 500;
                             line-height: 1.6;
                             background-color: transparent;
+                            display: flex;
                             flex-wrap: wrap;
                             &:hover {
                                 color: rgba(255,255,255,.4);
@@ -128,17 +149,43 @@
         row-gap: 106px;
         position: relative;
         top: 120px;
+        // flex-wrap: wrap;
+        @media screen and (max-width: 712px) {
+            position: relative;
+            top: 320px;
+            grid-template-columns: 1fr;
+            row-gap: 20px;
+        }
+        @media screen and (max-width: 519px) {
+            top: 400px;
+        }
+        @media screen and (max-width: 502px) {
+            top: 450px;
+        }
+        @media screen and (max-width: 361px) {
+            top: 550px;
+        }
+        @media screen and (max-width: 356px) {
+            top: 600px;
+        }
+        @media screen and (max-width: 297px) {
+            top: 670px;
+        }
         .design-element {
             
             // width: 85%;
             // padding-left: 3vw;
             .design-element__image {
                 max-width: 100%;
+                cursor: pointer;
             }
             .design-text-block {
                 padding-top: 20px;
                 display: flex;
                 justify-content: space-between;
+                @media screen and (max-width: 712px) {
+                    display: none;
+                }
                 .design-text-block__name {
                     color: white;
                     font-family: 'HK Guise', Helvetica, sans-serif;
@@ -208,10 +255,25 @@
                 color: white;
                 animation: shadow 2.2s infinite forwards;
             }
+            @media screen and (max-width: 712px) {
+                    top: 96%;
+                    padding: 0.5em 8em;
+
+            }
+            @media screen and (max-width: 390px) {
+                padding: 0.3em 5em;
+
+        }
+        }
+        .design-element_blur {
+            filter: blur(10px);
+            opacity: 0.3;
+        }
+        .design-element_display {
+            @media screen and (max-width: 712px) {
+                display: none;
+            }
         }
     }
-    .design-element_blur {
-        filter: blur(10px);
-        opacity: 0.3;
-    }
+
 }

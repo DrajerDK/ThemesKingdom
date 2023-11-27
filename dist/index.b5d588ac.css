@@ -6,6 +6,13 @@
   position: relative;
 }
 
+@media screen and (width <= 712px) {
+  .container-design {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .container-design .text-block {
   background-color: #0000;
   flex-flow: column wrap;
@@ -32,6 +39,12 @@
   }
 }
 
+@media screen and (width <= 356px) {
+  .container-design .text-block {
+    transform: translate(50%);
+  }
+}
+
 .container-design .text-block .text-block__title {
   color: #fff;
   background-color: #0000;
@@ -44,15 +57,22 @@
 
 .container-design .text-block .design-text-list {
   background-color: #0000;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
   margin-top: 6vw;
   margin-bottom: 30px;
   display: flex;
 }
 
+@media screen and (width <= 800px) {
+  .container-design .text-block .design-text-list {
+    flex-direction: column;
+  }
+}
+
 .container-design .text-block .design-text-list .subcrition-block {
   background-color: #0000;
-  flex-wrap: wrap;
 }
 
 .container-design .text-block .design-text-list .subcrition-block .subcrition-block__title {
@@ -91,6 +111,13 @@
   display: flex;
 }
 
+@media screen and (width <= 800px) {
+  .container-design .text-block .design-text-list .category-block {
+    width: 95%;
+    margin: 0;
+  }
+}
+
 .container-design .text-block .design-text-list .category-block .category-block__title {
   color: #fff6;
   background-color: #0000;
@@ -108,9 +135,22 @@
   display: flex;
 }
 
+@media screen and (width <= 800px) {
+  .container-design .text-block .design-text-list .category-block .categoty-box {
+    justify-content: flex-start;
+    gap: 1em;
+  }
+}
+
 .container-design .text-block .design-text-list .category-block .categoty-box .category-list {
   background-color: #0000;
   list-style-type: none;
+}
+
+@media screen and (width <= 800px) {
+  .container-design .text-block .design-text-list .category-block .categoty-box .category-list {
+    list-style: none;
+  }
 }
 
 .container-design .text-block .design-text-list .category-block .categoty-box .category-list .category-list__element {
@@ -121,6 +161,7 @@
   font-size: .9rem;
   font-weight: 500;
   line-height: 1.6;
+  display: flex;
 }
 
 .container-design .text-block .design-text-list .category-block .categoty-box .category-list .category-list__element:hover {
@@ -140,7 +181,47 @@
   top: 120px;
 }
 
+@media screen and (width <= 712px) {
+  .container-design .design-block {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    position: relative;
+    top: 320px;
+  }
+}
+
+@media screen and (width <= 519px) {
+  .container-design .design-block {
+    top: 400px;
+  }
+}
+
+@media screen and (width <= 502px) {
+  .container-design .design-block {
+    top: 450px;
+  }
+}
+
+@media screen and (width <= 361px) {
+  .container-design .design-block {
+    top: 550px;
+  }
+}
+
+@media screen and (width <= 356px) {
+  .container-design .design-block {
+    top: 600px;
+  }
+}
+
+@media screen and (width <= 297px) {
+  .container-design .design-block {
+    top: 670px;
+  }
+}
+
 .container-design .design-block .design-element .design-element__image {
+  cursor: pointer;
   max-width: 100%;
 }
 
@@ -148,6 +229,12 @@
   justify-content: space-between;
   padding-top: 20px;
   display: flex;
+}
+
+@media screen and (width <= 712px) {
+  .container-design .design-block .design-element .design-text-block {
+    display: none;
+  }
 }
 
 .container-design .design-block .design-element .design-text-block .design-text-block__name {
@@ -228,9 +315,28 @@
   animation: 2.2s infinite forwards shadow;
 }
 
-.container-design .design-element_blur {
+@media screen and (width <= 712px) {
+  .container-design .design-block .design-block__button {
+    padding: .5em 8em;
+    top: 96%;
+  }
+}
+
+@media screen and (width <= 390px) {
+  .container-design .design-block .design-block__button {
+    padding: .3em 5em;
+  }
+}
+
+.container-design .design-block .design-element_blur {
   filter: blur(10px);
   opacity: .3;
+}
+
+@media screen and (width <= 712px) {
+  .container-design .design-block .design-element_display {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=index.b5d588ac.css.map */
