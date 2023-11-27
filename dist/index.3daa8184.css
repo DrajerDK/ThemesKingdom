@@ -7,6 +7,13 @@
   display: flex;
 }
 
+@media screen and (width <= 902px) {
+  .container-niches {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .container-niches .niches-block .niches-block__title {
   color: #fff;
   margin-bottom: 20px;
@@ -19,6 +26,12 @@
   display: flex;
 }
 
+@media screen and (width <= 902px) {
+  .container-niches .niches-block .niches-content {
+    flex-direction: column;
+  }
+}
+
 .container-niches .niches-block .niches-content .niches-text {
   flex-direction: column;
   justify-content: space-between;
@@ -26,9 +39,25 @@
   display: flex;
 }
 
+@media screen and (width <= 902px) {
+  .container-niches .niches-block .niches-content .niches-text {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
 .container-niches .niches-block .niches-content .niches-text .niches-list {
   line-height: 1.1;
   list-style-type: none;
+}
+
+@media screen and (width <= 902px) {
+  .container-niches .niches-block .niches-content .niches-text .niches-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    display: flex;
+  }
 }
 
 .container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element {
@@ -66,6 +95,12 @@
   background-color: #0000;
 }
 
+@media screen and (width <= 902px) {
+  .container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element .element__button {
+    display: none;
+  }
+}
+
 .container-niches .niches-block .niches-content .niches-text .niches-list .niches-list__element_opacity {
   opacity: 1;
 }
@@ -79,11 +114,29 @@
   bottom: 50px;
 }
 
+@media screen and (width <= 1224px) {
+  .container-niches .niches-block .niches-content .niches-text .niches-text__description {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (width <= 902px) {
+  .container-niches .niches-block .niches-content .niches-text .niches-text__description {
+    margin-top: 15%;
+  }
+}
+
 .container-niches .niches-block .niches-content .niches-image-box {
   justify-content: flex-end;
   align-items: flex-start;
   width: 60%;
   display: flex;
+}
+
+@media screen and (width <= 902px) {
+  .container-niches .niches-block .niches-content .niches-image-box {
+    width: 100%;
+  }
 }
 
 .container-niches .niches-block .niches-content .niches-image-box .niches-image-box__image {
