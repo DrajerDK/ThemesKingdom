@@ -5,6 +5,14 @@
   padding-right: 80px;
 }
 
+@media screen and (width <= 1070px) {
+  .container-questions {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .container-questions .container-questions__title {
   letter-spacing: -.1em;
   background-color: #0000;
