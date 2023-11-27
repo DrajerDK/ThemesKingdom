@@ -35,6 +35,9 @@
                 .marqee-image-box__image {
                     background-color: transparent;
                     max-width: 100%;
+                    @media screen and (max-width: 1070px) {
+                        max-width: 50%;
+                    }
                 }
             }
         }
@@ -46,6 +49,11 @@
         padding-left: 80px;
         padding-right: 80px;
         margin-top: 5vw;
+        @media screen and (max-width: 1070px) {
+            flex-direction: column;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
         .get-started-button-box__description {
             background-color: transparent;
             font-size: 1.2rem;
@@ -54,10 +62,13 @@
             display: flex;
             align-items: center;
             margin-right: 1em;
+            text-align: center;
         }
         .get-started-button-box__button {
             background-color: transparent;
             @include button-black;
+            text-align: center;
+            margin: 0 auto;
         }
     }
 }
