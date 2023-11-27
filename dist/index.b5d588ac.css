@@ -8,7 +8,7 @@
 
 .container-design .text-block {
   background-color: #0000;
-  flex-direction: column;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   width: 90%;
@@ -18,6 +18,18 @@
   position: absolute;
   right: 50%;
   transform: translate(50%, -78%);
+}
+
+@media screen and (width <= 710.4px) {
+  .container-design .text-block {
+    transform: translate(50%, -30%);
+  }
+}
+
+@media screen and (width <= 500px) {
+  .container-design .text-block {
+    transform: translate(50%, -10%);
+  }
 }
 
 .container-design .text-block .text-block__title {
@@ -40,6 +52,7 @@
 
 .container-design .text-block .design-text-list .subcrition-block {
   background-color: #0000;
+  flex-wrap: wrap;
 }
 
 .container-design .text-block .design-text-list .subcrition-block .subcrition-block__title {
@@ -88,6 +101,7 @@
 
 .container-design .text-block .design-text-list .category-block .categoty-box {
   background-color: #0000;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 2.5em;
   margin-top: 20px;
