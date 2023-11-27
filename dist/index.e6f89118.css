@@ -7,6 +7,36 @@
   display: flex;
 }
 
+@media screen and (width <= 790px) {
+  .container-banner {
+    margin-top: 8%;
+  }
+}
+
+@media screen and (width <= 570px) {
+  .container-banner {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (width <= 380px) {
+  .container-banner {
+    margin-top: 20%;
+  }
+}
+
+@media screen and (width <= 310px) {
+  .container-banner {
+    margin-top: 30%;
+  }
+}
+
+@media screen and (width <= 250px) {
+  .container-banner {
+    margin-top: 50%;
+  }
+}
+
 .container-banner .banner-text {
   flex-direction: column;
   align-items: center;
@@ -14,8 +44,15 @@
   display: flex;
 }
 
+@media screen and (width <= 570px) {
+  .container-banner .banner-text {
+    width: 95%;
+  }
+}
+
 .container-banner .banner-text .banner-text__description {
   color: #fff;
+  text-align: center;
   margin-bottom: 10px;
   padding-top: 5vw;
   font-family: HK Guise, Helvetica, sans-serif;
@@ -35,6 +72,7 @@
 
 .container-banner .banner-text .banner-text__button {
   color: #000;
+  text-align: center;
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 3em;
@@ -49,6 +87,18 @@
   color: #fff;
   background-color: #0000;
   animation: 2.2s infinite forwards shadow;
+}
+
+@media screen and (width <= 570px) {
+  .container-banner .banner-text .banner-text__button {
+    padding: 1em 4em;
+  }
+}
+
+@media screen and (width <= 380px) {
+  .container-banner .banner-text .banner-text__button {
+    padding: .5em 3em;
+  }
 }
 
 .container-banner .container-banner__video {
