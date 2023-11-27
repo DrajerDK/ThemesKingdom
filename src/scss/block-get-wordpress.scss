@@ -5,6 +5,10 @@
     padding-left: 80px;
     padding-right: 80px;
     margin-bottom: 8vw;
+    @media screen and (max-width: 902px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .container-wordpress__title {
         color: $main-font-color;
         font-family: $main-font-family;
@@ -31,9 +35,18 @@
     }
     .button-block-wordpress {
         display: flex;
+        @media screen and (max-width: 902px) {
+            flex-direction: column-reverse;
+        }
         .button-block-wordpress__button {
             @include button-white;
             padding: 1.7em 4em;
+            text-align: center;
+            @media screen and (max-width: 902px) {
+                margin: 0 auto;
+                margin-top: 30px;
+                margin-bottom: 50px;
+            }
         }
         .button-block-wordpress__descriprion {
             color: $main-font-color;
@@ -44,6 +57,9 @@
             font-size: calc(15px + 0.258vw);
             position: relative;
             left: 30px;
+            @media screen and (max-width: 902px) {
+                margin-top: 15px;
+            }
         }
     }
 }
