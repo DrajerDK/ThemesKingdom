@@ -14,12 +14,25 @@
   transform: rotate(10deg);
 }
 
+@media screen and (width <= 700px) {
+  .section-ticker .ticker-box {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+}
+
 .section-ticker .ticker-box .ticker-box__ticker {
   white-space: nowrap;
   background-color: #0000;
   max-height: 21vw;
   animation: 40s linear infinite marquee;
   overflow: hidden;
+}
+
+@media screen and (width <= 700px) {
+  .section-ticker .ticker-box .ticker-box__ticker {
+    max-height: 34vw;
+  }
 }
 
 @keyframes marquee {
