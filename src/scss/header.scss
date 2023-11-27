@@ -5,6 +5,11 @@
     padding-bottom: 22px;
     padding-left: 80px;
     padding-right: 80px;
+    background-color: #000;
+    width: 90%;
+    z-index: 1;
+    top: 0;
+    position: fixed;
     .logo {
         display: flex;
         align-items: center;

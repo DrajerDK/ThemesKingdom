@@ -1,6 +1,7 @@
 .container-banner {
   flex-direction: column;
   justify-content: center;
+  margin-top: 6%;
   padding-left: 80px;
   padding-right: 80px;
   display: flex;

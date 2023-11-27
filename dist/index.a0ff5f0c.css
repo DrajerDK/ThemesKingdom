@@ -1,7 +1,12 @@
 .container {
+  z-index: 1;
+  background-color: #000;
   justify-content: space-between;
+  width: 90%;
   padding: 22px 80px;
   display: flex;
+  position: fixed;
+  top: 0;
 }
 
 .container .logo {
