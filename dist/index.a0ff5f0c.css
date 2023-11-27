@@ -9,6 +9,22 @@
   top: 0;
 }
 
+@media screen and (width <= 1025px) {
+  .container {
+    width: 95%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (width <= 420px) {
+  .container {
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 .container .logo {
   align-items: center;
   display: flex;
@@ -26,6 +42,12 @@
 
 .container .logo .logo__text:hover {
   cursor: pointer;
+}
+
+@media screen and (width <= 1025px) {
+  .container .logo .logo__text {
+    display: none;
+  }
 }
 
 .container .logo .logo__image {
@@ -57,10 +79,22 @@
   text-decoration: underline;
 }
 
+@media screen and (width <= 1025px) {
+  .container .menu-top .menu-top__button {
+    display: none;
+  }
+}
+
 .container .login-block {
   justify-content: space-between;
   width: 255px;
   display: flex;
+}
+
+@media screen and (width <= 1025px) {
+  .container .login-block {
+    display: none;
+  }
 }
 
 .container .login-block .login-block__sign-in-button {
@@ -93,6 +127,16 @@
 .container .login-block .login-block__get-started-button:hover {
   color: #fff;
   background-color: #0000;
+}
+
+.container .menu-top_menu {
+  display: none;
+}
+
+@media screen and (width <= 1025px) {
+  .container .menu-top_menu {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=index.a0ff5f0c.css.map */
