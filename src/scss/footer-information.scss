@@ -11,6 +11,10 @@
         background-color: transparent;
         max-width: 100%;
         width: 135px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.5;
+        }
     }
     .footer-information-box {
         background-color: transparent;

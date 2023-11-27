@@ -146,6 +146,7 @@
                 }
                 .design-element-button {
                     display: flex;
+                    position: relative;
                     .design-element-button__botton-start {
                         color: white;
                         font-family: 'HK Guise', Helvetica, sans-serif;
@@ -154,17 +155,30 @@
                         display: flex;
                         align-items: center;
                         position: relative;
+                        cursor: pointer;
                         &:hover {
                             opacity: 1;
-                            cursor: pointer;
                         }
-                        .design-element-button__arrow {
-                            width: 25px;
+                        &:hover + .design-element-button__arrow {
+                            opacity: 1;
+                            position: relative;
+                            left: 0.6em;
                             filter: brightness(2);
-                            padding-left: 0.3em;
-                            
                         }
                     }                    
+                    .design-element-button__arrow {
+                        width: 25px;
+                        padding-left: 0.3em;
+                        cursor: pointer;
+                        &:hover {
+                            position: relative;
+                            left: 0.6em;
+                            filter: brightness(2);
+                        }
+                        &:hover + .design-element-button__botton-start {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }

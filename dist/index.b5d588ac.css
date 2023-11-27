@@ -150,11 +150,13 @@
 
 .container-design .design-block .design-element .design-text-block .design-element-button {
   display: flex;
+  position: relative;
 }
 
 .container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start {
   color: #fff;
   opacity: .5;
+  cursor: pointer;
   align-items: center;
   font-family: HK Guise, Helvetica, sans-serif;
   font-weight: 500;
@@ -164,13 +166,29 @@
 
 .container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start:hover {
   opacity: 1;
-  cursor: pointer;
 }
 
-.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start .design-element-button__arrow {
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__botton-start:hover + .design-element-button__arrow {
+  opacity: 1;
   filter: brightness(2);
+  position: relative;
+  left: .6em;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__arrow {
+  cursor: pointer;
   width: 25px;
   padding-left: .3em;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__arrow:hover {
+  filter: brightness(2);
+  position: relative;
+  left: .6em;
+}
+
+.container-design .design-block .design-element .design-text-block .design-element-button .design-element-button__arrow:hover + .design-element-button__botton-start {
+  opacity: 1;
 }
 
 .container-design .design-block .design-block__button {

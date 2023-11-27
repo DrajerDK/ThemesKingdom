@@ -8,9 +8,14 @@
 }
 
 .container-footer-information .container-footer-information__logo {
+  cursor: pointer;
   background-color: #0000;
   width: 135px;
   max-width: 100%;
+}
+
+.container-footer-information .container-footer-information__logo:hover {
+  opacity: .5;
 }
 
 .container-footer-information .footer-information-box {
