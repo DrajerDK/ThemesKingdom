@@ -8,9 +8,19 @@
     padding-top: 6em;
     max-width: 100%;
     padding-bottom: 14em;
+    @media screen and (max-width: 1070px) {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column-reverse;
+    }
     .container-customers__image {
     background-color: transparent;
     max-width: 40vw;
+    object-fit: cover;
+    @media screen and (max-width: 902px) {
+        max-width: 100%;
+
+    }
     }
     .customers-text {
         margin-left: 3em;
@@ -19,6 +29,14 @@
         justify-content: flex-end;
         flex-direction: column;
         align-items: flex-end;
+        @media screen and (max-width: 1070px) {
+            width: 100%;
+            margin-left: 0;
+
+        }
+        @media screen and (max-width: 902px) {
+            width: 100%;
+        }
         .customers-text__title {
             font-family: $main-font-family;
             font-size: calc(20.08px + 5.62vw);
@@ -31,6 +49,7 @@
         }
         .customers-text__button {
         @include button-black;
+        margin: 0 auto;
         }
         .customers-comment {
             background-color: transparent;
@@ -44,11 +63,19 @@
                 padding-right: 120px;
                 padding-top: 7vw;
                 line-height: 1.5;
+                @media screen and (max-width: 1070px) {
+                    padding-top: 2vw;
+
+                }
             }
             .customers-switch {
                 background-color: transparent;
                 display: flex;
                 justify-content: space-between;
+                @media screen and (max-width: 902px) {
+                    flex-direction: column;
+            
+                }
                 .customers-switch__customer-name {
                     background-color: transparent;
                     font-family: $main-font-family;
