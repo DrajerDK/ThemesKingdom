@@ -10,6 +10,10 @@
     flex-direction: column;
     padding-top: 14vw;
     margin-bottom: 14em;
+    @media screen and (max-width: 902px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     .features-block {
         width: 100%;
         .features-block__title {
@@ -20,12 +24,21 @@
         .features-content {
             display: flex;
             margin-top: 5em;
+            @media screen and (max-width: 902px) {
+                flex-direction: column;
+            }
             .features-video-box {
                 width: 50%;
                 justify-content: flex-end;
                 align-items: flex-start;
+                @media screen and (max-width: 902px) {
+                    width: 100%;
+                }
                 .features-video-box__video {
                     width: 90%;
+                    @media screen and (max-width: 902px) {
+                        width: 100%;
+                    }
                 }
             }
             .features-text-block {
@@ -33,6 +46,9 @@
                 justify-content: flex-end;
                 flex-direction: column;
                 width: 45%;
+                @media screen and (max-width: 902px) {
+                    width: 100%;
+                }
                 .features-text-block__description {
                     font-size: calc(17.09px + 0.7767vw);
                     font-family: $main-font-family;
@@ -40,19 +56,33 @@
                     margin-bottom: 2.2em;
                     opacity: 0.5;
                     text-align: start;
+                    @media screen and (max-width: 902px) {
+                        margin-bottom: 0.5em;
+                    }
                 }
                 .features-button-block {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    @media screen and (max-width: 902px) {
+                        flex-direction: column-reverse;
+                        align-items: flex-start;
+                    }
                     .features-button-block__button {
                         @include button-white;
                         padding: 1.4em 3.2em;
+                        text-align: center;
+                        @media screen and (max-width: 902px) {
+                            margin: 0 auto;
+                        }
                     }
                     .features-switch-block {
                         width: 25%;
                         display: flex;
                         justify-content: space-between;
+                        @media screen and (max-width: 902px) {
+                            margin-bottom: 0.5em;
+                        }
                         .features-switch-block__button {
                             color: $main-font-color;
                             border: none;
